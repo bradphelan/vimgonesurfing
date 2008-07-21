@@ -1,0 +1,6 @@
+friend ostream & operator << (ostream & os, <{}> ){
+   os << <{}>;
+   return os;
+}
+<{}>
+
