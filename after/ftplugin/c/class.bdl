@@ -1,0 +1,8 @@
+/** @class <{class}> <{}> */
+class <{class}> {
+public:
+/** Constructor */
+<{class}>(<{}>){<{}>}
+<{}>
+};
+

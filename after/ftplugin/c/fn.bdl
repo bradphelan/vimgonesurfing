@@ -1,0 +1,8 @@
+/** @brief <{name}> <{}>.
+   <{}>
+/
+<{rtype}> <{name}>(<{args}>){
+
+   return ret; 
+}
+ 

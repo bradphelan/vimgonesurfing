@@ -1,6 +1,5 @@
-/** @namespace <{n}> */
+/** @namespace */
 namespace <{n}> {
     <{}>
-} // namespace <{n}>
-<{}>
+} // namespace <{n}> <{}>
 
