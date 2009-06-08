@@ -1,4 +1,4 @@
-friend ostream & operator << (ostream & os, <{}> ){
+friend std::ostream & operator << (std::ostream & os, <{}> ){
    os << <{}>;
    return os;
 }
