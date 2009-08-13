@@ -7,11 +7,15 @@ filetype plugin indent on
 set expandtab
 set sw=4
 set ts=4
-set guifont=Monospace\ 8.1
+set sts=4
+set guifont=Monospace\ 8.6
+
+hi CursorLine guibg=Grey8
+hi CursorColumn guibg=Grey8
 
 
-set runtimepath=$VIMRUNTIME,~/vimfiles/download,~/vimfiles/download/after,~/vimfiles/devel,~/vimfiles/devel/after,~/vimfiles/svncommand-1.67.3,~/vimgonesurfing,~/vimgonesurfing/after
-colorscheme darkocean
+set runtimepath=$VIMRUNTIME,~/vimfiles/vcs,~/vimgonesurfing,~/vimgonesurfing/after
+colorscheme torte
 
 imap jj 
 
@@ -21,6 +25,7 @@ nmap <space> i<space><esc>l
 nmap <tab> i<tab><esc>l
 
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
+vnoremap ; "hy:%s/<C-r>h//gc<left><left><left>
 
 let g:mapleader=','
 let g:maplocalleader=','
@@ -100,3 +105,11 @@ let g:netrw_altv = 1
 
 
 highlight Pmenu guibg=darkblue
+
+"Build the current file
+com Make exec "make " . expand("%:r") . ".os"
+
+" Copy the path of the file into the unamed buffer
+nmap cp :let @* = expand("%")<cr>
+nmap cP :let @* = expand("%:p")<cr>
+
