@@ -113,3 +113,27 @@ com Make exec "make " . expand("%:r") . ".os"
 nmap cp :let @* = expand("%")<cr>
 nmap cP :let @* = expand("%:p")<cr>
 
+function! Rebuild()
+   call system("./rebuild.sh 2>&1 | tee err.txt")
+   cg err.txt
+   copen
+   cn
+   cp
+endf
+
+com! Rebuild call Rebuild()
+
+nnoremap  zz
+nnoremap  zz
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap j jzz
+nnoremap k kzz
+nnoremap G Gzz
+nnoremap ( (zz
+nnoremap ) )zz
+nnoremap { {zz
+nnoremap } }zz
+nnoremap [ [zz
+nnoremap ] ]zz
+nnoremap % %zz

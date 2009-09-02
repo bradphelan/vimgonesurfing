@@ -1,0 +1,1 @@
+std::auto_ptr<<{type}>> <{v}>(new <{type}>(<{}>));<{}>

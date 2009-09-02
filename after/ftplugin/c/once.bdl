@@ -1,0 +1,4 @@
+#ifndef ``toupper(substitute("SNIP_FILE_NAME",'[\\/.]','_','g'))``_H_
+#define ``toupper(substitute("SNIP_FILE_NAME",'[\\/.]','_','g'))``_H_
+<{}>
+#endif // ``toupper(substitute("SNIP_FILE_NAME",'[\\/.]','_','g'))``_H_
