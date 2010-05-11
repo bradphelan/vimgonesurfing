@@ -1,4 +1,4 @@
-for(<{type}> <{name}>; <{name}> <{}>; <{name}> <{}>)
+for(<{type}> <{name}> = <{}>; <{name}> <{}>; <{name}> <{}>)
 {
 	<{}>
 }
