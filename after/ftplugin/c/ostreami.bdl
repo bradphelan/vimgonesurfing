@@ -1,0 +1,1 @@
+std::ostream_iterator<<{}>>(<{:std::cout}>, <{}>)

@@ -80,6 +80,7 @@ syn region htmlH5       start="^\s*#####"               end="\($\|#\+\)" contain
 syn region htmlH6       start="^\s*######"              end="\($\|#\+\)" contains=@Spell
 syn match  htmlH1       /^.\+\n=\+$/ contains=@Spell
 syn match  htmlH2       /^.\+\n-\+$/ contains=@Spell
+syn match  htmlH1       /^!SLIDE.*$/
 
 "highlighting for Markdown groups
 HtmlHiLink mkdString	    String

@@ -17,7 +17,8 @@ hi CursorLine guibg=Grey8
 hi CursorColumn guibg=Grey8
 
 
-set runtimepath=$VIMRUNTIME,~/vimfiles/vcs,~/vimgonesurfing,~/vimgonesurfing/after,~/.vim/vim-cucumber
+set runtimepath=~/vimgonesurfing,~/vimgonesurfing/after,~/.vim/vim-cucumber,$VIMRUNTIME,~/vimfiles/vcs
+
 colorscheme torte
 
 imap jj 
@@ -238,3 +239,5 @@ endfunction
 " Use lighting fast zsh based grep with recursive
 " path operators
 set grepprg=zsh\ -c\ 'grep\ -nH\ $*'
+
+au! BufRead,BufNewFile *.md set filetype=markdown
